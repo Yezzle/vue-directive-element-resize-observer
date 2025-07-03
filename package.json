@@ -1,0 +1,59 @@
+{
+  "name": "vue-directive-element-resize-observer",
+  "version": "1.0.0",
+  "description": "监听dom元素尺寸变化，支持动态添加class和回调函数，用于更精细的局部响应式适配",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./src/*": {
+      "import": "./src/*",
+      "require": "./src/*"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "index.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build",
+    "publish:patch": "node scripts/publish.js patch",
+    "publish:minor": "node scripts/publish.js minor",
+    "publish:major": "node scripts/publish.js major",
+    "publish:private": "NPM_REGISTRY=https://your-private-registry.com npm run publish:patch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "resize",
+    "dom",
+    "vue-directive",
+    "vue2",
+    "vue3",
+    "typescript",
+    "responsive",
+    "resize-observer"
+  ],
+  "author": "625427555@qq.com",
+  "license": "ISC",
+  "peerDependencies": {
+    "vue": "^2.6.0 || ^3.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.0",
+    "@types/node": "^18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yezzle/vue-directive-element-resize-observer.git"
+  }
+}
