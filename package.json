@@ -30,7 +30,7 @@
     "publish:patch": "node scripts/publish.js patch",
     "publish:minor": "node scripts/publish.js minor",
     "publish:major": "node scripts/publish.js major",
-    "publish:private": "NPM_REGISTRY=https://your-private-registry.com npm run publish:patch",
+    "publish:private": "NPM_REGISTRY=https://registry.npmjs.org npm run publish:patch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
